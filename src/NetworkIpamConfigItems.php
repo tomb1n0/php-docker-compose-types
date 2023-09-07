@@ -53,6 +53,94 @@ class NetworkIpamConfigItems extends ClassStructure
     }
 
     /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getSubnet()
+    {
+        return $this->subnet;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $subnet
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setSubnet($subnet)
+    {
+        $this->subnet = $subnet;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getIpRange()
+    {
+        return $this->ipRange;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $ipRange
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setIpRange($ipRange)
+    {
+        $this->ipRange = $ipRange;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getGateway()
+    {
+        return $this->gateway;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $gateway
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setGateway($gateway)
+    {
+        $this->gateway = $gateway;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]
+     * @codeCoverageIgnoreStart
+     */
+    public function getAuxAddresses()
+    {
+        return $this->auxAddresses;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[] $auxAddresses
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setAuxAddresses($auxAddresses)
+    {
+        $this->auxAddresses = $auxAddresses;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

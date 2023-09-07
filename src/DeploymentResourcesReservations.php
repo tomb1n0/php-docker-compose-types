@@ -54,6 +54,94 @@ class DeploymentResourcesReservations extends ClassStructure
     }
 
     /**
+     * @return float|string
+     * @codeCoverageIgnoreStart
+     */
+    public function getCpus()
+    {
+        return $this->cpus;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param float|string $cpus
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setCpus($cpus)
+    {
+        $this->cpus = $cpus;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getMemory()
+    {
+        return $this->memory;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $memory
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setMemory($memory)
+    {
+        $this->memory = $memory;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return GenericResourcesItems[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getGenericResources()
+    {
+        return $this->genericResources;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param GenericResourcesItems[]|array $genericResources
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setGenericResources($genericResources)
+    {
+        $this->genericResources = $genericResources;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return DevicesItems[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getDevices()
+    {
+        return $this->devices;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param DevicesItems[]|array $devices
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setDevices($devices)
+    {
+        $this->devices = $devices;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

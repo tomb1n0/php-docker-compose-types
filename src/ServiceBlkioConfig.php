@@ -56,4 +56,136 @@ class ServiceBlkioConfig extends ClassStructure
         $ownerSchema->type = Schema::OBJECT;
         $ownerSchema->additionalProperties = false;
     }
+
+    /**
+     * @return BlkioLimit[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getDeviceReadBps()
+    {
+        return $this->deviceReadBps;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param BlkioLimit[]|array $deviceReadBps
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setDeviceReadBps($deviceReadBps)
+    {
+        $this->deviceReadBps = $deviceReadBps;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return BlkioLimit[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getDeviceReadIops()
+    {
+        return $this->deviceReadIops;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param BlkioLimit[]|array $deviceReadIops
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setDeviceReadIops($deviceReadIops)
+    {
+        $this->deviceReadIops = $deviceReadIops;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return BlkioLimit[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getDeviceWriteBps()
+    {
+        return $this->deviceWriteBps;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param BlkioLimit[]|array $deviceWriteBps
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setDeviceWriteBps($deviceWriteBps)
+    {
+        $this->deviceWriteBps = $deviceWriteBps;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return BlkioLimit[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getDeviceWriteIops()
+    {
+        return $this->deviceWriteIops;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param BlkioLimit[]|array $deviceWriteIops
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setDeviceWriteIops($deviceWriteIops)
+    {
+        $this->deviceWriteIops = $deviceWriteIops;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return int
+     * @codeCoverageIgnoreStart
+     */
+    public function getWeight()
+    {
+        return $this->weight;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param int $weight
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setWeight($weight)
+    {
+        $this->weight = $weight;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return BlkioWeight[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getWeightDevice()
+    {
+        return $this->weightDevice;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param BlkioWeight[]|array $weightDevice
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setWeightDevice($weightDevice)
+    {
+        $this->weightDevice = $weightDevice;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
 }

@@ -50,6 +50,94 @@ class DeploymentRestartPolicy extends ClassStructure
     }
 
     /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getCondition()
+    {
+        return $this->condition;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $condition
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setCondition($condition)
+    {
+        $this->condition = $condition;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getDelay()
+    {
+        return $this->delay;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $delay
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setDelay($delay)
+    {
+        $this->delay = $delay;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return int
+     * @codeCoverageIgnoreStart
+     */
+    public function getMaxAttempts()
+    {
+        return $this->maxAttempts;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param int $maxAttempts
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setMaxAttempts($maxAttempts)
+    {
+        $this->maxAttempts = $maxAttempts;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getWindow()
+    {
+        return $this->window;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $window
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setWindow($window)
+    {
+        $this->window = $window;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

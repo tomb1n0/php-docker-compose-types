@@ -39,6 +39,50 @@ class GenericResourcesItemsDiscreteResourceSpec extends ClassStructure
     }
 
     /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getKind()
+    {
+        return $this->kind;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $kind
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setKind($kind)
+    {
+        $this->kind = $kind;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return float
+     * @codeCoverageIgnoreStart
+     */
+    public function getValue()
+    {
+        return $this->value;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param float $value
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setValue($value)
+    {
+        $this->value = $value;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

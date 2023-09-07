@@ -68,6 +68,116 @@ class DevicesItems extends ClassStructure
     }
 
     /**
+     * @return string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getCapabilities()
+    {
+        return $this->capabilities;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|array $capabilities
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setCapabilities($capabilities)
+    {
+        $this->capabilities = $capabilities;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string|int
+     * @codeCoverageIgnoreStart
+     */
+    public function getCount()
+    {
+        return $this->count;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string|int $count
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setCount($count)
+    {
+        $this->count = $count;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getDeviceIds()
+    {
+        return $this->deviceIds;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|array $deviceIds
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setDeviceIds($deviceIds)
+    {
+        $this->deviceIds = $deviceIds;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getDriver()
+    {
+        return $this->driver;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $driver
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setDriver($driver)
+    {
+        $this->driver = $driver;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|float[]|bool[]|null[]|string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getOptions()
+    {
+        return $this->options;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|float[]|bool[]|null[]|string[]|array $options
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setOptions($options)
+    {
+        $this->options = $options;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

@@ -43,6 +43,72 @@ class DeploymentResourcesLimits extends ClassStructure
     }
 
     /**
+     * @return float|string
+     * @codeCoverageIgnoreStart
+     */
+    public function getCpus()
+    {
+        return $this->cpus;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param float|string $cpus
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setCpus($cpus)
+    {
+        $this->cpus = $cpus;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getMemory()
+    {
+        return $this->memory;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $memory
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setMemory($memory)
+    {
+        $this->memory = $memory;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return int
+     * @codeCoverageIgnoreStart
+     */
+    public function getPids()
+    {
+        return $this->pids;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param int $pids
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setPids($pids)
+    {
+        $this->pids = $pids;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

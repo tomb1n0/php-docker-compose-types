@@ -35,6 +35,28 @@ class DeploymentPlacementPreferencesItems extends ClassStructure
     }
 
     /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getSpread()
+    {
+        return $this->spread;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $spread
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setSpread($spread)
+    {
+        $this->spread = $spread;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

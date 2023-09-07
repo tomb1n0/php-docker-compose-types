@@ -52,6 +52,116 @@ class ServicePortsItemsOneOf2 extends ClassStructure
     }
 
     /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getMode()
+    {
+        return $this->mode;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $mode
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setMode($mode)
+    {
+        $this->mode = $mode;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getHostIp()
+    {
+        return $this->hostIp;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $hostIp
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setHostIp($hostIp)
+    {
+        $this->hostIp = $hostIp;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return int
+     * @codeCoverageIgnoreStart
+     */
+    public function getTarget()
+    {
+        return $this->target;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param int $target
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setTarget($target)
+    {
+        $this->target = $target;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string|int
+     * @codeCoverageIgnoreStart
+     */
+    public function getPublished()
+    {
+        return $this->published;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string|int $published
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setPublished($published)
+    {
+        $this->published = $published;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getProtocol()
+    {
+        return $this->protocol;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $protocol
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setProtocol($protocol)
+    {
+        $this->protocol = $protocol;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

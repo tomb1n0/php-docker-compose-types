@@ -43,6 +43,50 @@ class ServiceVolumesItemsOneOf1Tmpfs extends ClassStructure
     }
 
     /**
+     * @return int|string
+     * @codeCoverageIgnoreStart
+     */
+    public function getSize()
+    {
+        return $this->size;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param int|string $size
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setSize($size)
+    {
+        $this->size = $size;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return float
+     * @codeCoverageIgnoreStart
+     */
+    public function getMode()
+    {
+        return $this->mode;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param float $mode
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setMode($mode)
+    {
+        $this->mode = $mode;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

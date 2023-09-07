@@ -35,6 +35,28 @@ class ServiceVolumesItemsOneOf1Volume extends ClassStructure
     }
 
     /**
+     * @return bool
+     * @codeCoverageIgnoreStart
+     */
+    public function getNocopy()
+    {
+        return $this->nocopy;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param bool $nocopy
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setNocopy($nocopy)
+    {
+        $this->nocopy = $nocopy;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

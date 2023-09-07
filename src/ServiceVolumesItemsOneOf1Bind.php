@@ -52,6 +52,72 @@ class ServiceVolumesItemsOneOf1Bind extends ClassStructure
     }
 
     /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getPropagation()
+    {
+        return $this->propagation;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $propagation
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setPropagation($propagation)
+    {
+        $this->propagation = $propagation;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return bool
+     * @codeCoverageIgnoreStart
+     */
+    public function getCreateHostPath()
+    {
+        return $this->createHostPath;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param bool $createHostPath
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setCreateHostPath($createHostPath)
+    {
+        $this->createHostPath = $createHostPath;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getSelinux()
+    {
+        return $this->selinux;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $selinux
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setSelinux($selinux)
+    {
+        $this->selinux = $selinux;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

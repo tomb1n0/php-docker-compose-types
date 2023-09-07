@@ -43,6 +43,72 @@ class ServiceCredentialSpec extends ClassStructure
     }
 
     /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getConfig()
+    {
+        return $this->config;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $config
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setConfig($config)
+    {
+        $this->config = $config;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getFile()
+    {
+        return $this->file;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $file
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setFile($file)
+    {
+        $this->file = $file;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getRegistry()
+    {
+        return $this->registry;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $registry
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setRegistry($registry)
+    {
+        $this->registry = $registry;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

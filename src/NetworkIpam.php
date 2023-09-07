@@ -47,6 +47,72 @@ class NetworkIpam extends ClassStructure
     }
 
     /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getDriver()
+    {
+        return $this->driver;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $driver
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setDriver($driver)
+    {
+        $this->driver = $driver;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return NetworkIpamConfigItems[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getConfig()
+    {
+        return $this->config;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param NetworkIpamConfigItems[]|array $config
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setConfig($config)
+    {
+        $this->config = $config;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]
+     * @codeCoverageIgnoreStart
+     */
+    public function getOptions()
+    {
+        return $this->options;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[] $options
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setOptions($options)
+    {
+        $this->options = $options;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

@@ -46,6 +46,72 @@ class DeploymentPlacement extends ClassStructure
     }
 
     /**
+     * @return string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getConstraints()
+    {
+        return $this->constraints;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|array $constraints
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setConstraints($constraints)
+    {
+        $this->constraints = $constraints;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return DeploymentPlacementPreferencesItems[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getPreferences()
+    {
+        return $this->preferences;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param DeploymentPlacementPreferencesItems[]|array $preferences
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setPreferences($preferences)
+    {
+        $this->preferences = $preferences;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return int
+     * @codeCoverageIgnoreStart
+     */
+    public function getMaxReplicasPerNode()
+    {
+        return $this->maxReplicasPerNode;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param int $maxReplicasPerNode
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setMaxReplicasPerNode($maxReplicasPerNode)
+    {
+        $this->maxReplicasPerNode = $maxReplicasPerNode;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

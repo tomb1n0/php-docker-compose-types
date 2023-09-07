@@ -50,4 +50,70 @@ class IncludeOneOf1 extends ClassStructure
         $ownerSchema->type = Schema::OBJECT;
         $ownerSchema->additionalProperties = false;
     }
+
+    /**
+     * @return string|string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getPath()
+    {
+        return $this->path;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string|string[]|array $path
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setPath($path)
+    {
+        $this->path = $path;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string|string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getEnvFile()
+    {
+        return $this->envFile;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string|string[]|array $envFile
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setEnvFile($envFile)
+    {
+        $this->envFile = $envFile;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getProjectDirectory()
+    {
+        return $this->projectDirectory;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $projectDirectory
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setProjectDirectory($projectDirectory)
+    {
+        $this->projectDirectory = $projectDirectory;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
 }

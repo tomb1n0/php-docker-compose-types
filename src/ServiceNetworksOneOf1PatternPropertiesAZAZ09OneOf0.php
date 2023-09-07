@@ -60,6 +60,116 @@ class ServiceNetworksOneOf1PatternPropertiesAZAZ09OneOf0 extends ClassStructure
     }
 
     /**
+     * @return string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getAliases()
+    {
+        return $this->aliases;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|array $aliases
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setAliases($aliases)
+    {
+        $this->aliases = $aliases;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getIpv4Address()
+    {
+        return $this->ipv4Address;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $ipv4Address
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setIpv4Address($ipv4Address)
+    {
+        $this->ipv4Address = $ipv4Address;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getIpv6Address()
+    {
+        return $this->ipv6Address;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $ipv6Address
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setIpv6Address($ipv6Address)
+    {
+        $this->ipv6Address = $ipv6Address;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getLinkLocalIps()
+    {
+        return $this->linkLocalIps;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|array $linkLocalIps
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setLinkLocalIps($linkLocalIps)
+    {
+        $this->linkLocalIps = $linkLocalIps;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return float
+     * @codeCoverageIgnoreStart
+     */
+    public function getPriority()
+    {
+        return $this->priority;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param float $priority
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setPriority($priority)
+    {
+        $this->priority = $priority;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

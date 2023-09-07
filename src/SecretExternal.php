@@ -29,4 +29,26 @@ class SecretExternal extends ClassStructure
         $properties->name = Schema::string();
         $ownerSchema->type = [Schema::BOOLEAN, Schema::OBJECT];
     }
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $name
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
 }

@@ -176,6 +176,446 @@ class ServiceBuildOneOf1 extends ClassStructure
     }
 
     /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getContext()
+    {
+        return $this->context;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $context
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setContext($context)
+    {
+        $this->context = $context;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getDockerfile()
+    {
+        return $this->dockerfile;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $dockerfile
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setDockerfile($dockerfile)
+    {
+        $this->dockerfile = $dockerfile;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getDockerfileInline()
+    {
+        return $this->dockerfileInline;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $dockerfileInline
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setDockerfileInline($dockerfileInline)
+    {
+        $this->dockerfileInline = $dockerfileInline;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|float[]|bool[]|null[]|string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getArgs()
+    {
+        return $this->args;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|float[]|bool[]|null[]|string[]|array $args
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setArgs($args)
+    {
+        $this->args = $args;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|float[]|bool[]|null[]|string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getSsh()
+    {
+        return $this->ssh;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|float[]|bool[]|null[]|string[]|array $ssh
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setSsh($ssh)
+    {
+        $this->ssh = $ssh;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|float[]|bool[]|null[]|string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getLabels()
+    {
+        return $this->labels;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|float[]|bool[]|null[]|string[]|array $labels
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setLabels($labels)
+    {
+        $this->labels = $labels;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getCacheFrom()
+    {
+        return $this->cacheFrom;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|array $cacheFrom
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setCacheFrom($cacheFrom)
+    {
+        $this->cacheFrom = $cacheFrom;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getCacheTo()
+    {
+        return $this->cacheTo;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|array $cacheTo
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setCacheTo($cacheTo)
+    {
+        $this->cacheTo = $cacheTo;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return bool
+     * @codeCoverageIgnoreStart
+     */
+    public function getNoCache()
+    {
+        return $this->noCache;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param bool $noCache
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setNoCache($noCache)
+    {
+        $this->noCache = $noCache;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|float[]|bool[]|null[]|string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getAdditionalContexts()
+    {
+        return $this->additionalContexts;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|float[]|bool[]|null[]|string[]|array $additionalContexts
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setAdditionalContexts($additionalContexts)
+    {
+        $this->additionalContexts = $additionalContexts;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getNetwork()
+    {
+        return $this->network;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $network
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setNetwork($network)
+    {
+        $this->network = $network;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return bool
+     * @codeCoverageIgnoreStart
+     */
+    public function getPull()
+    {
+        return $this->pull;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param bool $pull
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setPull($pull)
+    {
+        $this->pull = $pull;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getTarget()
+    {
+        return $this->target;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $target
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setTarget($target)
+    {
+        $this->target = $target;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return int|string
+     * @codeCoverageIgnoreStart
+     */
+    public function getShmSize()
+    {
+        return $this->shmSize;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param int|string $shmSize
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setShmSize($shmSize)
+    {
+        $this->shmSize = $shmSize;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|float[]|bool[]|null[]|string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getExtraHosts()
+    {
+        return $this->extraHosts;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|float[]|bool[]|null[]|string[]|array $extraHosts
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setExtraHosts($extraHosts)
+    {
+        $this->extraHosts = $extraHosts;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getIsolation()
+    {
+        return $this->isolation;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $isolation
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setIsolation($isolation)
+    {
+        $this->isolation = $isolation;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return bool
+     * @codeCoverageIgnoreStart
+     */
+    public function getPrivileged()
+    {
+        return $this->privileged;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param bool $privileged
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setPrivileged($privileged)
+    {
+        $this->privileged = $privileged;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|ServiceConfigOrSecretItemsOneOf1[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getSecrets()
+    {
+        return $this->secrets;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|ServiceConfigOrSecretItemsOneOf1[]|array $secrets
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setSecrets($secrets)
+    {
+        $this->secrets = $secrets;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getTags()
+    {
+        return $this->tags;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|array $tags
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setTags($tags)
+    {
+        $this->tags = $tags;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getPlatforms()
+    {
+        return $this->platforms;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|array $platforms
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setPlatforms($platforms)
+    {
+        $this->platforms = $platforms;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

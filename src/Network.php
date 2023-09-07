@@ -88,6 +88,204 @@ class Network extends ClassStructure
     }
 
     /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $name
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getDriver()
+    {
+        return $this->driver;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $driver
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setDriver($driver)
+    {
+        $this->driver = $driver;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|float[]
+     * @codeCoverageIgnoreStart
+     */
+    public function getDriverOpts()
+    {
+        return $this->driverOpts;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|float[] $driverOpts
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setDriverOpts($driverOpts)
+    {
+        $this->driverOpts = $driverOpts;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return NetworkIpam
+     * @codeCoverageIgnoreStart
+     */
+    public function getIpam()
+    {
+        return $this->ipam;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param NetworkIpam $ipam
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setIpam(NetworkIpam $ipam)
+    {
+        $this->ipam = $ipam;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return NetworkExternal|bool
+     * @codeCoverageIgnoreStart
+     */
+    public function getExternal()
+    {
+        return $this->external;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param NetworkExternal|bool $external
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setExternal($external)
+    {
+        $this->external = $external;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return bool
+     * @codeCoverageIgnoreStart
+     */
+    public function getInternal()
+    {
+        return $this->internal;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param bool $internal
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setInternal($internal)
+    {
+        $this->internal = $internal;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return bool
+     * @codeCoverageIgnoreStart
+     */
+    public function getEnableIpv6()
+    {
+        return $this->enableIpv6;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param bool $enableIpv6
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setEnableIpv6($enableIpv6)
+    {
+        $this->enableIpv6 = $enableIpv6;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return bool
+     * @codeCoverageIgnoreStart
+     */
+    public function getAttachable()
+    {
+        return $this->attachable;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param bool $attachable
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setAttachable($attachable)
+    {
+        $this->attachable = $attachable;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|float[]|bool[]|null[]|string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getLabels()
+    {
+        return $this->labels;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|float[]|bool[]|null[]|string[]|array $labels
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setLabels($labels)
+    {
+        $this->labels = $labels;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

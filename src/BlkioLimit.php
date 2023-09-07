@@ -34,4 +34,48 @@ class BlkioLimit extends ClassStructure
         $ownerSchema->additionalProperties = false;
         $ownerSchema->setFromRef('#/definitions/blkio_limit');
     }
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getPath()
+    {
+        return $this->path;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $path
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setPath($path)
+    {
+        $this->path = $path;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return int|string
+     * @codeCoverageIgnoreStart
+     */
+    public function getRate()
+    {
+        return $this->rate;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param int|string $rate
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setRate($rate)
+    {
+        $this->rate = $rate;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
 }

@@ -67,6 +67,138 @@ class DeploymentUpdateConfig extends ClassStructure
     }
 
     /**
+     * @return int
+     * @codeCoverageIgnoreStart
+     */
+    public function getParallelism()
+    {
+        return $this->parallelism;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param int $parallelism
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setParallelism($parallelism)
+    {
+        $this->parallelism = $parallelism;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getDelay()
+    {
+        return $this->delay;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $delay
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setDelay($delay)
+    {
+        $this->delay = $delay;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getFailureAction()
+    {
+        return $this->failureAction;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $failureAction
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setFailureAction($failureAction)
+    {
+        $this->failureAction = $failureAction;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getMonitor()
+    {
+        return $this->monitor;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $monitor
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setMonitor($monitor)
+    {
+        $this->monitor = $monitor;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return float
+     * @codeCoverageIgnoreStart
+     */
+    public function getMaxFailureRatio()
+    {
+        return $this->maxFailureRatio;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param float $maxFailureRatio
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setMaxFailureRatio($maxFailureRatio)
+    {
+        $this->maxFailureRatio = $maxFailureRatio;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getOrder()
+    {
+        return $this->order;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $order
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setOrder($order)
+    {
+        $this->order = $order;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

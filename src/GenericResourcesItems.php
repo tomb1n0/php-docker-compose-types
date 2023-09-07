@@ -36,6 +36,28 @@ class GenericResourcesItems extends ClassStructure
     }
 
     /**
+     * @return GenericResourcesItemsDiscreteResourceSpec
+     * @codeCoverageIgnoreStart
+     */
+    public function getDiscreteResourceSpec()
+    {
+        return $this->discreteResourceSpec;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param GenericResourcesItemsDiscreteResourceSpec $discreteResourceSpec
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setDiscreteResourceSpec(GenericResourcesItemsDiscreteResourceSpec $discreteResourceSpec)
+    {
+        $this->discreteResourceSpec = $discreteResourceSpec;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

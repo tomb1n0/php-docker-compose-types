@@ -33,4 +33,48 @@ class ServiceExtendsOneOf1 extends ClassStructure
             self::names()->service,
         );
     }
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getService()
+    {
+        return $this->service;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $service
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setService($service)
+    {
+        $this->service = $service;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getFile()
+    {
+        return $this->file;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $file
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setFile($file)
+    {
+        $this->file = $file;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
 }

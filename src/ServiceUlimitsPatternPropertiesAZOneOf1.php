@@ -43,6 +43,50 @@ class ServiceUlimitsPatternPropertiesAZOneOf1 extends ClassStructure
     }
 
     /**
+     * @return int
+     * @codeCoverageIgnoreStart
+     */
+    public function getHard()
+    {
+        return $this->hard;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param int $hard
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setHard($hard)
+    {
+        $this->hard = $hard;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return int
+     * @codeCoverageIgnoreStart
+     */
+    public function getSoft()
+    {
+        return $this->soft;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param int $soft
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setSoft($soft)
+    {
+        $this->soft = $soft;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

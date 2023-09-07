@@ -41,6 +41,50 @@ class ServiceLogging extends ClassStructure
     }
 
     /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getDriver()
+    {
+        return $this->driver;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $driver
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setDriver($driver)
+    {
+        $this->driver = $driver;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|float[]|null[]
+     * @codeCoverageIgnoreStart
+     */
+    public function getOptions()
+    {
+        return $this->options;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|float[]|null[] $options
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setOptions($options)
+    {
+        $this->options = $options;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

@@ -67,6 +67,116 @@ class Config extends ClassStructure
     }
 
     /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $name
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getFile()
+    {
+        return $this->file;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $file
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setFile($file)
+    {
+        $this->file = $file;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return ConfigExternal|bool
+     * @codeCoverageIgnoreStart
+     */
+    public function getExternal()
+    {
+        return $this->external;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param ConfigExternal|bool $external
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setExternal($external)
+    {
+        $this->external = $external;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|float[]|bool[]|null[]|string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getLabels()
+    {
+        return $this->labels;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|float[]|bool[]|null[]|string[]|array $labels
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setLabels($labels)
+    {
+        $this->labels = $labels;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getTemplateDriver()
+    {
+        return $this->templateDriver;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $templateDriver
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setTemplateDriver($templateDriver)
+    {
+        $this->templateDriver = $templateDriver;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

@@ -67,6 +67,182 @@ class ServiceVolumesItemsOneOf1 extends ClassStructure
     }
 
     /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getType()
+    {
+        return $this->type;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $type
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setType($type)
+    {
+        $this->type = $type;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getSource()
+    {
+        return $this->source;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $source
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setSource($source)
+    {
+        $this->source = $source;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getTarget()
+    {
+        return $this->target;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $target
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setTarget($target)
+    {
+        $this->target = $target;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return bool
+     * @codeCoverageIgnoreStart
+     */
+    public function getReadOnly()
+    {
+        return $this->readOnly;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param bool $readOnly
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setReadOnly($readOnly)
+    {
+        $this->readOnly = $readOnly;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getConsistency()
+    {
+        return $this->consistency;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $consistency
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setConsistency($consistency)
+    {
+        $this->consistency = $consistency;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return ServiceVolumesItemsOneOf1Bind
+     * @codeCoverageIgnoreStart
+     */
+    public function getBind()
+    {
+        return $this->bind;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param ServiceVolumesItemsOneOf1Bind $bind
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setBind(ServiceVolumesItemsOneOf1Bind $bind)
+    {
+        $this->bind = $bind;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return ServiceVolumesItemsOneOf1Volume
+     * @codeCoverageIgnoreStart
+     */
+    public function getVolume()
+    {
+        return $this->volume;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param ServiceVolumesItemsOneOf1Volume $volume
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setVolume(ServiceVolumesItemsOneOf1Volume $volume)
+    {
+        $this->volume = $volume;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return ServiceVolumesItemsOneOf1Tmpfs
+     * @codeCoverageIgnoreStart
+     */
+    public function getTmpfs()
+    {
+        return $this->tmpfs;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param ServiceVolumesItemsOneOf1Tmpfs $tmpfs
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setTmpfs(ServiceVolumesItemsOneOf1Tmpfs $tmpfs)
+    {
+        $this->tmpfs = $tmpfs;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

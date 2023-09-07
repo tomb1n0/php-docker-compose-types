@@ -49,4 +49,70 @@ class ServiceDependsOnOneOf1PatternPropertiesAZAZ09 extends ClassStructure
             self::names()->condition,
         );
     }
+
+    /**
+     * @return bool
+     * @codeCoverageIgnoreStart
+     */
+    public function getRestart()
+    {
+        return $this->restart;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param bool $restart
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setRestart($restart)
+    {
+        $this->restart = $restart;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return bool
+     * @codeCoverageIgnoreStart
+     */
+    public function getRequired()
+    {
+        return $this->required;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param bool $required
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setRequired($required)
+    {
+        $this->required = $required;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getCondition()
+    {
+        return $this->condition;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $condition
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setCondition($condition)
+    {
+        $this->condition = $condition;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
 }

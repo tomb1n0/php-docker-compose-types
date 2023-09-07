@@ -99,6 +99,182 @@ class DockerCompose extends ClassStructure
     }
 
     /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getVersion()
+    {
+        return $this->version;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $version declared for backward compatibility, ignored.
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setVersion($version)
+    {
+        $this->version = $version;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $name define the Compose project name, until user defines one explicitly.
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|IncludeOneOf1[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getInclude()
+    {
+        return $this->include;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|IncludeOneOf1[]|array $include compose sub-projects to be included.
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setInclude($include)
+    {
+        $this->include = $include;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return Service[]
+     * @codeCoverageIgnoreStart
+     */
+    public function getServices()
+    {
+        return $this->services;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param Service[] $services
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setServices($services)
+    {
+        $this->services = $services;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return Network[]|null[]
+     * @codeCoverageIgnoreStart
+     */
+    public function getNetworks()
+    {
+        return $this->networks;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param Network[]|null[] $networks
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setNetworks($networks)
+    {
+        $this->networks = $networks;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return Volume[]|null[]
+     * @codeCoverageIgnoreStart
+     */
+    public function getVolumes()
+    {
+        return $this->volumes;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param Volume[]|null[] $volumes
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setVolumes($volumes)
+    {
+        $this->volumes = $volumes;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return Secret[]
+     * @codeCoverageIgnoreStart
+     */
+    public function getSecrets()
+    {
+        return $this->secrets;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param Secret[] $secrets
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setSecrets($secrets)
+    {
+        $this->secrets = $secrets;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return Config[]
+     * @codeCoverageIgnoreStart
+     */
+    public function getConfigs()
+    {
+        return $this->configs;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param Config[] $configs
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setConfigs($configs)
+    {
+        $this->configs = $configs;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

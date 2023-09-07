@@ -600,6 +600,1832 @@ class Service extends ClassStructure
     }
 
     /**
+     * @return Deployment|null
+     * @codeCoverageIgnoreStart
+     */
+    public function getDeploy()
+    {
+        return $this->deploy;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param Deployment|null $deploy
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setDeploy($deploy)
+    {
+        $this->deploy = $deploy;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|float[]|bool[]|null[]|string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getAnnotations()
+    {
+        return $this->annotations;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|float[]|bool[]|null[]|string[]|array $annotations
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setAnnotations($annotations)
+    {
+        $this->annotations = $annotations;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return bool
+     * @codeCoverageIgnoreStart
+     */
+    public function getAttach()
+    {
+        return $this->attach;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param bool $attach
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setAttach($attach)
+    {
+        $this->attach = $attach;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string|ServiceBuildOneOf1
+     * @codeCoverageIgnoreStart
+     */
+    public function getBuild()
+    {
+        return $this->build;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string|ServiceBuildOneOf1 $build
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setBuild($build)
+    {
+        $this->build = $build;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return ServiceBlkioConfig
+     * @codeCoverageIgnoreStart
+     */
+    public function getBlkioConfig()
+    {
+        return $this->blkioConfig;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param ServiceBlkioConfig $blkioConfig
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setBlkioConfig(ServiceBlkioConfig $blkioConfig)
+    {
+        $this->blkioConfig = $blkioConfig;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getCapAdd()
+    {
+        return $this->capAdd;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|array $capAdd
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setCapAdd($capAdd)
+    {
+        $this->capAdd = $capAdd;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getCapDrop()
+    {
+        return $this->capDrop;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|array $capDrop
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setCapDrop($capDrop)
+    {
+        $this->capDrop = $capDrop;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getCgroup()
+    {
+        return $this->cgroup;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $cgroup
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setCgroup($cgroup)
+    {
+        $this->cgroup = $cgroup;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getCgroupParent()
+    {
+        return $this->cgroupParent;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $cgroupParent
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setCgroupParent($cgroupParent)
+    {
+        $this->cgroupParent = $cgroupParent;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return null|string|string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getCommand()
+    {
+        return $this->command;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param null|string|string[]|array $command
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setCommand($command)
+    {
+        $this->command = $command;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|ServiceConfigOrSecretItemsOneOf1[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getConfigs()
+    {
+        return $this->configs;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|ServiceConfigOrSecretItemsOneOf1[]|array $configs
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setConfigs($configs)
+    {
+        $this->configs = $configs;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getContainerName()
+    {
+        return $this->containerName;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $containerName
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setContainerName($containerName)
+    {
+        $this->containerName = $containerName;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return int
+     * @codeCoverageIgnoreStart
+     */
+    public function getCpuCount()
+    {
+        return $this->cpuCount;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param int $cpuCount
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setCpuCount($cpuCount)
+    {
+        $this->cpuCount = $cpuCount;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return int
+     * @codeCoverageIgnoreStart
+     */
+    public function getCpuPercent()
+    {
+        return $this->cpuPercent;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param int $cpuPercent
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setCpuPercent($cpuPercent)
+    {
+        $this->cpuPercent = $cpuPercent;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return float|string
+     * @codeCoverageIgnoreStart
+     */
+    public function getCpuShares()
+    {
+        return $this->cpuShares;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param float|string $cpuShares
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setCpuShares($cpuShares)
+    {
+        $this->cpuShares = $cpuShares;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return float|string
+     * @codeCoverageIgnoreStart
+     */
+    public function getCpuQuota()
+    {
+        return $this->cpuQuota;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param float|string $cpuQuota
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setCpuQuota($cpuQuota)
+    {
+        $this->cpuQuota = $cpuQuota;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return float|string
+     * @codeCoverageIgnoreStart
+     */
+    public function getCpuPeriod()
+    {
+        return $this->cpuPeriod;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param float|string $cpuPeriod
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setCpuPeriod($cpuPeriod)
+    {
+        $this->cpuPeriod = $cpuPeriod;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return float|string
+     * @codeCoverageIgnoreStart
+     */
+    public function getCpuRtPeriod()
+    {
+        return $this->cpuRtPeriod;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param float|string $cpuRtPeriod
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setCpuRtPeriod($cpuRtPeriod)
+    {
+        $this->cpuRtPeriod = $cpuRtPeriod;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return float|string
+     * @codeCoverageIgnoreStart
+     */
+    public function getCpuRtRuntime()
+    {
+        return $this->cpuRtRuntime;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param float|string $cpuRtRuntime
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setCpuRtRuntime($cpuRtRuntime)
+    {
+        $this->cpuRtRuntime = $cpuRtRuntime;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return float|string
+     * @codeCoverageIgnoreStart
+     */
+    public function getCpus()
+    {
+        return $this->cpus;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param float|string $cpus
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setCpus($cpus)
+    {
+        $this->cpus = $cpus;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getCpuset()
+    {
+        return $this->cpuset;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $cpuset
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setCpuset($cpuset)
+    {
+        $this->cpuset = $cpuset;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return ServiceCredentialSpec
+     * @codeCoverageIgnoreStart
+     */
+    public function getCredentialSpec()
+    {
+        return $this->credentialSpec;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param ServiceCredentialSpec $credentialSpec
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setCredentialSpec(ServiceCredentialSpec $credentialSpec)
+    {
+        $this->credentialSpec = $credentialSpec;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|array|ServiceDependsOnOneOf1PatternPropertiesAZAZ09[]
+     * @codeCoverageIgnoreStart
+     */
+    public function getDependsOn()
+    {
+        return $this->dependsOn;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|array|ServiceDependsOnOneOf1PatternPropertiesAZAZ09[] $dependsOn
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setDependsOn($dependsOn)
+    {
+        $this->dependsOn = $dependsOn;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getDeviceCgroupRules()
+    {
+        return $this->deviceCgroupRules;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|array $deviceCgroupRules
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setDeviceCgroupRules($deviceCgroupRules)
+    {
+        $this->deviceCgroupRules = $deviceCgroupRules;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getDevices()
+    {
+        return $this->devices;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|array $devices
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setDevices($devices)
+    {
+        $this->devices = $devices;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string|string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getDns()
+    {
+        return $this->dns;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string|string[]|array $dns
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setDns($dns)
+    {
+        $this->dns = $dns;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getDnsOpt()
+    {
+        return $this->dnsOpt;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|array $dnsOpt
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setDnsOpt($dnsOpt)
+    {
+        $this->dnsOpt = $dnsOpt;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string|string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getDnsSearch()
+    {
+        return $this->dnsSearch;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string|string[]|array $dnsSearch
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setDnsSearch($dnsSearch)
+    {
+        $this->dnsSearch = $dnsSearch;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getDomainname()
+    {
+        return $this->domainname;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $domainname
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setDomainname($domainname)
+    {
+        $this->domainname = $domainname;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return null|string|string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getEntrypoint()
+    {
+        return $this->entrypoint;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param null|string|string[]|array $entrypoint
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setEntrypoint($entrypoint)
+    {
+        $this->entrypoint = $entrypoint;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string|string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getEnvFile()
+    {
+        return $this->envFile;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string|string[]|array $envFile
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setEnvFile($envFile)
+    {
+        $this->envFile = $envFile;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|float[]|bool[]|null[]|string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getEnvironment()
+    {
+        return $this->environment;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|float[]|bool[]|null[]|string[]|array $environment
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setEnvironment($environment)
+    {
+        $this->environment = $environment;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|float[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getExpose()
+    {
+        return $this->expose;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|float[]|array $expose
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setExpose($expose)
+    {
+        $this->expose = $expose;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string|ServiceExtendsOneOf1
+     * @codeCoverageIgnoreStart
+     */
+    public function getExtends()
+    {
+        return $this->extends;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string|ServiceExtendsOneOf1 $extends
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setExtends($extends)
+    {
+        $this->extends = $extends;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getExternalLinks()
+    {
+        return $this->externalLinks;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|array $externalLinks
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setExternalLinks($externalLinks)
+    {
+        $this->externalLinks = $externalLinks;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|float[]|bool[]|null[]|string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getExtraHosts()
+    {
+        return $this->extraHosts;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|float[]|bool[]|null[]|string[]|array $extraHosts
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setExtraHosts($extraHosts)
+    {
+        $this->extraHosts = $extraHosts;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|float[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getGroupAdd()
+    {
+        return $this->groupAdd;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|float[]|array $groupAdd
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setGroupAdd($groupAdd)
+    {
+        $this->groupAdd = $groupAdd;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return Healthcheck
+     * @codeCoverageIgnoreStart
+     */
+    public function getHealthcheck()
+    {
+        return $this->healthcheck;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param Healthcheck $healthcheck
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setHealthcheck(Healthcheck $healthcheck)
+    {
+        $this->healthcheck = $healthcheck;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getHostname()
+    {
+        return $this->hostname;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $hostname
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setHostname($hostname)
+    {
+        $this->hostname = $hostname;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $image
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return bool
+     * @codeCoverageIgnoreStart
+     */
+    public function getInit()
+    {
+        return $this->init;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param bool $init
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setInit($init)
+    {
+        $this->init = $init;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getIpc()
+    {
+        return $this->ipc;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $ipc
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setIpc($ipc)
+    {
+        $this->ipc = $ipc;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getIsolation()
+    {
+        return $this->isolation;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $isolation
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setIsolation($isolation)
+    {
+        $this->isolation = $isolation;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|float[]|bool[]|null[]|string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getLabels()
+    {
+        return $this->labels;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|float[]|bool[]|null[]|string[]|array $labels
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setLabels($labels)
+    {
+        $this->labels = $labels;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getLinks()
+    {
+        return $this->links;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|array $links
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setLinks($links)
+    {
+        $this->links = $links;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return ServiceLogging
+     * @codeCoverageIgnoreStart
+     */
+    public function getLogging()
+    {
+        return $this->logging;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param ServiceLogging $logging
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setLogging(ServiceLogging $logging)
+    {
+        $this->logging = $logging;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getMacAddress()
+    {
+        return $this->macAddress;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $macAddress
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setMacAddress($macAddress)
+    {
+        $this->macAddress = $macAddress;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return float|string
+     * @codeCoverageIgnoreStart
+     */
+    public function getMemLimit()
+    {
+        return $this->memLimit;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param float|string $memLimit
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setMemLimit($memLimit)
+    {
+        $this->memLimit = $memLimit;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string|int
+     * @codeCoverageIgnoreStart
+     */
+    public function getMemReservation()
+    {
+        return $this->memReservation;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string|int $memReservation
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setMemReservation($memReservation)
+    {
+        $this->memReservation = $memReservation;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return int
+     * @codeCoverageIgnoreStart
+     */
+    public function getMemSwappiness()
+    {
+        return $this->memSwappiness;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param int $memSwappiness
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setMemSwappiness($memSwappiness)
+    {
+        $this->memSwappiness = $memSwappiness;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return float|string
+     * @codeCoverageIgnoreStart
+     */
+    public function getMemswapLimit()
+    {
+        return $this->memswapLimit;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param float|string $memswapLimit
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setMemswapLimit($memswapLimit)
+    {
+        $this->memswapLimit = $memswapLimit;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getNetworkMode()
+    {
+        return $this->networkMode;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $networkMode
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setNetworkMode($networkMode)
+    {
+        $this->networkMode = $networkMode;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|array|ServiceNetworksOneOf1PatternPropertiesAZAZ09OneOf0[]|null[]
+     * @codeCoverageIgnoreStart
+     */
+    public function getNetworks()
+    {
+        return $this->networks;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|array|ServiceNetworksOneOf1PatternPropertiesAZAZ09OneOf0[]|null[] $networks
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setNetworks($networks)
+    {
+        $this->networks = $networks;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return bool
+     * @codeCoverageIgnoreStart
+     */
+    public function getOomKillDisable()
+    {
+        return $this->oomKillDisable;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param bool $oomKillDisable
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setOomKillDisable($oomKillDisable)
+    {
+        $this->oomKillDisable = $oomKillDisable;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return int
+     * @codeCoverageIgnoreStart
+     */
+    public function getOomScoreAdj()
+    {
+        return $this->oomScoreAdj;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param int $oomScoreAdj
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setOomScoreAdj($oomScoreAdj)
+    {
+        $this->oomScoreAdj = $oomScoreAdj;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string|null
+     * @codeCoverageIgnoreStart
+     */
+    public function getPid()
+    {
+        return $this->pid;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string|null $pid
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setPid($pid)
+    {
+        $this->pid = $pid;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return float|string
+     * @codeCoverageIgnoreStart
+     */
+    public function getPidsLimit()
+    {
+        return $this->pidsLimit;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param float|string $pidsLimit
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setPidsLimit($pidsLimit)
+    {
+        $this->pidsLimit = $pidsLimit;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getPlatform()
+    {
+        return $this->platform;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $platform
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setPlatform($platform)
+    {
+        $this->platform = $platform;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return float[]|string[]|ServicePortsItemsOneOf2[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getPorts()
+    {
+        return $this->ports;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param float[]|string[]|ServicePortsItemsOneOf2[]|array $ports
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setPorts($ports)
+    {
+        $this->ports = $ports;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return bool
+     * @codeCoverageIgnoreStart
+     */
+    public function getPrivileged()
+    {
+        return $this->privileged;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param bool $privileged
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setPrivileged($privileged)
+    {
+        $this->privileged = $privileged;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getProfiles()
+    {
+        return $this->profiles;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|array $profiles
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setProfiles($profiles)
+    {
+        $this->profiles = $profiles;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getPullPolicy()
+    {
+        return $this->pullPolicy;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $pullPolicy
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setPullPolicy($pullPolicy)
+    {
+        $this->pullPolicy = $pullPolicy;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return bool
+     * @codeCoverageIgnoreStart
+     */
+    public function getReadOnly()
+    {
+        return $this->readOnly;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param bool $readOnly
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setReadOnly($readOnly)
+    {
+        $this->readOnly = $readOnly;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getRestart()
+    {
+        return $this->restart;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $restart
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setRestart($restart)
+    {
+        $this->restart = $restart;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getRuntime()
+    {
+        return $this->runtime;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $runtime
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setRuntime($runtime)
+    {
+        $this->runtime = $runtime;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return int
+     * @codeCoverageIgnoreStart
+     */
+    public function getScale()
+    {
+        return $this->scale;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param int $scale
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setScale($scale)
+    {
+        $this->scale = $scale;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getSecurityOpt()
+    {
+        return $this->securityOpt;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|array $securityOpt
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setSecurityOpt($securityOpt)
+    {
+        $this->securityOpt = $securityOpt;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return float|string
+     * @codeCoverageIgnoreStart
+     */
+    public function getShmSize()
+    {
+        return $this->shmSize;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param float|string $shmSize
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setShmSize($shmSize)
+    {
+        $this->shmSize = $shmSize;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|ServiceConfigOrSecretItemsOneOf1[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getSecrets()
+    {
+        return $this->secrets;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|ServiceConfigOrSecretItemsOneOf1[]|array $secrets
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setSecrets($secrets)
+    {
+        $this->secrets = $secrets;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|float[]|bool[]|null[]|string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getSysctls()
+    {
+        return $this->sysctls;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|float[]|bool[]|null[]|string[]|array $sysctls
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setSysctls($sysctls)
+    {
+        $this->sysctls = $sysctls;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return bool
+     * @codeCoverageIgnoreStart
+     */
+    public function getStdinOpen()
+    {
+        return $this->stdinOpen;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param bool $stdinOpen
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setStdinOpen($stdinOpen)
+    {
+        $this->stdinOpen = $stdinOpen;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getStopGracePeriod()
+    {
+        return $this->stopGracePeriod;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $stopGracePeriod
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setStopGracePeriod($stopGracePeriod)
+    {
+        $this->stopGracePeriod = $stopGracePeriod;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getStopSignal()
+    {
+        return $this->stopSignal;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $stopSignal
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setStopSignal($stopSignal)
+    {
+        $this->stopSignal = $stopSignal;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return mixed
+     * @codeCoverageIgnoreStart
+     */
+    public function getStorageOpt()
+    {
+        return $this->storageOpt;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param mixed $storageOpt
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setStorageOpt($storageOpt)
+    {
+        $this->storageOpt = $storageOpt;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string|string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getTmpfs()
+    {
+        return $this->tmpfs;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string|string[]|array $tmpfs
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setTmpfs($tmpfs)
+    {
+        $this->tmpfs = $tmpfs;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return bool
+     * @codeCoverageIgnoreStart
+     */
+    public function getTty()
+    {
+        return $this->tty;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param bool $tty
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setTty($tty)
+    {
+        $this->tty = $tty;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return int[]|ServiceUlimitsPatternPropertiesAZOneOf1[]
+     * @codeCoverageIgnoreStart
+     */
+    public function getUlimits()
+    {
+        return $this->ulimits;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param int[]|ServiceUlimitsPatternPropertiesAZOneOf1[] $ulimits
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setUlimits($ulimits)
+    {
+        $this->ulimits = $ulimits;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $user
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getUts()
+    {
+        return $this->uts;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $uts
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setUts($uts)
+    {
+        $this->uts = $uts;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getUsernsMode()
+    {
+        return $this->usernsMode;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $usernsMode
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setUsernsMode($usernsMode)
+    {
+        $this->usernsMode = $usernsMode;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|ServiceVolumesItemsOneOf1[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getVolumes()
+    {
+        return $this->volumes;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|ServiceVolumesItemsOneOf1[]|array $volumes
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setVolumes($volumes)
+    {
+        $this->volumes = $volumes;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string[]|array
+     * @codeCoverageIgnoreStart
+     */
+    public function getVolumesFrom()
+    {
+        return $this->volumesFrom;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string[]|array $volumesFrom
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setVolumesFrom($volumesFrom)
+    {
+        $this->volumesFrom = $volumesFrom;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getWorkingDir()
+    {
+        return $this->workingDir;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $workingDir
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setWorkingDir($workingDir)
+    {
+        $this->workingDir = $workingDir;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

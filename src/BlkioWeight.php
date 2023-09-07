@@ -34,4 +34,48 @@ class BlkioWeight extends ClassStructure
         $ownerSchema->additionalProperties = false;
         $ownerSchema->setFromRef('#/definitions/blkio_weight');
     }
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getPath()
+    {
+        return $this->path;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $path
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setPath($path)
+    {
+        $this->path = $path;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return int
+     * @codeCoverageIgnoreStart
+     */
+    public function getWeight()
+    {
+        return $this->weight;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param int $weight
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setWeight($weight)
+    {
+        $this->weight = $weight;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
 }

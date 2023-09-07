@@ -51,6 +51,116 @@ class ServiceConfigOrSecretItemsOneOf1 extends ClassStructure
     }
 
     /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getSource()
+    {
+        return $this->source;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $source
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setSource($source)
+    {
+        $this->source = $source;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getTarget()
+    {
+        return $this->target;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $target
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setTarget($target)
+    {
+        $this->target = $target;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getUid()
+    {
+        return $this->uid;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $uid
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setUid($uid)
+    {
+        $this->uid = $uid;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return string
+     * @codeCoverageIgnoreStart
+     */
+    public function getGid()
+    {
+        return $this->gid;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param string $gid
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setGid($gid)
+    {
+        $this->gid = $gid;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return float
+     * @codeCoverageIgnoreStart
+     */
+    public function getMode()
+    {
+        return $this->mode;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param float $mode
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setMode($mode)
+    {
+        $this->mode = $mode;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */

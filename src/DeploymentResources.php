@@ -39,6 +39,50 @@ class DeploymentResources extends ClassStructure
     }
 
     /**
+     * @return DeploymentResourcesLimits
+     * @codeCoverageIgnoreStart
+     */
+    public function getLimits()
+    {
+        return $this->limits;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param DeploymentResourcesLimits $limits
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setLimits(DeploymentResourcesLimits $limits)
+    {
+        $this->limits = $limits;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @return DeploymentResourcesReservations
+     * @codeCoverageIgnoreStart
+     */
+    public function getReservations()
+    {
+        return $this->reservations;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
+     * @param DeploymentResourcesReservations $reservations
+     * @return $this
+     * @codeCoverageIgnoreStart
+     */
+    public function setReservations(DeploymentResourcesReservations $reservations)
+    {
+        $this->reservations = $reservations;
+        return $this;
+    }
+    /** @codeCoverageIgnoreEnd */
+
+    /**
      * @return array
      * @codeCoverageIgnoreStart
      */
