@@ -18,7 +18,7 @@ use Swaggest\JsonSchema\Structure\ClassStructure;
  * Compose Specification
  * The Compose file is a YAML file defining a multi-containers based application.
  */
-class Structure extends ClassStructure
+class DockerCompose extends ClassStructure
 {
     const X_PROPERTY_PATTERN = '^x-';
 
