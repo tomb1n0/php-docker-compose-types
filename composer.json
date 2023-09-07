@@ -11,5 +11,7 @@
             "email": "tom.harper@rareloop.com"
         }
     ],
-    "require": {}
+    "require": {
+        "swaggest/json-schema": "^0.12.41"
+    }
 }
